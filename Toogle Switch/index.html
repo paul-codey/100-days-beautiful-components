@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleek Toggle Switch</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+  <style>
+    .toggle-switch {
+      transition: background-color 300ms ease-in-out;
+    }
+    .toggle-circle {
+      transition: transform 300ms ease-in-out;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="flex flex-col items-center justify-center p-8 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-lg">
+    <h2 id="mode-text" class="text-xl font-bold mb-6 text-gray-800">
+      Light Mode
+    </h2>
+    
+    <button
+      id="toggle-button"
+      class="toggle-switch relative inline-flex h-10 w-20 items-center rounded-full bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+    >
+      <span class="sr-only">Toggle Theme</span>
+      <span
+        id="toggle-circle"
+        class="toggle-circle inline-flex h-8 w-8 transform items-center justify-center rounded-full bg-white translate-x-1"
+      >
+        <i data-feather="sun" class="text-yellow-500" width="16" height="16"></i>
+      </span>
+    </button>
+    
+    <div class="mt-6 text-sm text-gray-600">
+      Try clicking the toggle and see
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body</html>
