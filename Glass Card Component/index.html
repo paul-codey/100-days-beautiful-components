@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glass Card Component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-full min-h-screen bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-8 flex items-center justify-center">
+  
+  <div class="glass-card relative w-80 rounded-xl overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105">
+    
+    <div class="absolute inset-0 backdrop-blur-md bg-white bg-opacity-10 border border-white border-opacity-20 shadow-lg"></div>
+    
+    <div class="absolute inset-0 bg-gradient-to-br from-white to-transparent opacity-30 pointer-events-none"></div>
+    
+    <!-- Card content -->
+    <div class="relative p-6 flex flex-col gap-4">
+      <div class="w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      
+      <h3 class="text-xl font-bold text-white">Glass Card Design</h3>
+      
+      <p class="text-white text-opacity-80 text-sm">
+        Created a modern UI component uses blur effects and subtle gradients to create. Perfect for portfolios and landing pages.
+      </p>
+      
+      <div class="mt-4 flex justify-between items-center">
+        <button class="px-4 py-2 rounded-md bg-white bg-opacity-20 hover:bg-opacity-30 text-white text-sm transition-colors">
+          Learn More
+        </button>
+        
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-green-400"></div>
+          <span class="text-white text-opacity-80 text-xs">Online</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
