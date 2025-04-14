@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading Indicator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-12px);
+      }
+    }
+
+    .dot {
+      animation: bounce 0.6s infinite alternate;
+    }
+
+    .dot:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .dot:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .dot:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center w-full h-screen bg-white p-8">
+  <div class="flex flex-col items-center justify-center w-full h-full">
+    <div class="mb-6 text-center">
+      <h2 class="text-xl font-semibold text-gray-700">Day 5 - Loading Indicator</h2>
+      <p class="text-gray-500 text-sm">Three bouncing dots animation</p>
+    </div>
+
+    <div class="flex items-center justify-center space-x-2">
+      <div class="w-4 h-4 bg-blue-500 rounded-full dot"></div>
+      <div class="w-4 h-4 bg-blue-500 rounded-full dot"></div>
+      <div class="w-4 h-4 bg-blue-500 rounded-full dot"></div>
+    </div>
+  </div>
+</body>
+</html>
